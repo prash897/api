@@ -19,7 +19,7 @@ import com.capitalone.dashboard.model.webhook.github.MergeEvent;
 import com.capitalone.dashboard.repository.CollectorItemRepository;
 import com.capitalone.dashboard.repository.CollectorRepository;
 import com.capitalone.dashboard.repository.CommitRepository;
-import com.capitalone.dashboard.repository.GitHubRepoRepository;
+import com.capitalone.dashboard.repository.GitHubRepository;
 import com.capitalone.dashboard.repository.GitRequestRepository;
 import com.capitalone.dashboard.request.GitSyncRequest;
 import com.capitalone.dashboard.settings.ApiSettings;
@@ -70,7 +70,7 @@ public class GitHubSyncServiceImpl implements GitHubSyncService {
     private final CollectorItemRepository collectorItemRepository;
     protected final ApiSettings apiSettings;
     protected final RestClient restClient;
-    protected final GitHubRepoRepository gitHubRepoRepository;
+    protected final GitHubRepository gitHubRepoRepository;
     protected final CollectorRepository collectorRepository;
     List<Commit> commits;
     List<GitRequest> pullRequests;
@@ -83,7 +83,7 @@ public class GitHubSyncServiceImpl implements GitHubSyncService {
     public GitHubSyncServiceImpl(CommitRepository commitRepository,
                                  GitRequestRepository gitRequestRepository,
                                  CollectorItemRepository collectorItemRepository,
-                                 GitHubRepoRepository gitHubRepoRepository,
+                                 GitHubRepository gitHubRepoRepository,
                                  CollectorRepository collectorRepository,
                                  ApiSettings apiSettings,
                                  RestClient restClient) {

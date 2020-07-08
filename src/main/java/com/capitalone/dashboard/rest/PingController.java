@@ -17,7 +17,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 public class PingController {
 	private static final Logger LOGGER = Logger.getLogger(PingController.class);
 
-    @Value("${version.number}")
+   // @Value("${version.number}")
     private String versionNumber;
 
     public PingController() {

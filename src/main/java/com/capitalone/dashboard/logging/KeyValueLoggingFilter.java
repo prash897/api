@@ -60,8 +60,8 @@ public class KeyValueLoggingFilter implements Filter {
             .with(APPLICATION_NAME, appName)
             .with(APPLICATION_VERSION, version)
             .with(REQUEST_URL, request.getRequestURL().toString())
-            .with(REQUEST_METHOD, request.getMethod())
-            .with(STATUS_CODE, response.getStatus());
+            .with(REQUEST_METHOD, request.getMethod());
+            //.with(STATUS_CODE, response.getStatus());
         
         HttpSession session = request.getSession(false);
         if(session != null) {

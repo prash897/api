@@ -6,7 +6,7 @@ import com.capitalone.dashboard.model.webhook.github.GitHubRepo;
 import com.capitalone.dashboard.repository.CollectorItemRepository;
 import com.capitalone.dashboard.repository.CollectorRepository;
 import com.capitalone.dashboard.repository.CommitRepository;
-import com.capitalone.dashboard.repository.GitHubRepoRepository;
+import com.capitalone.dashboard.repository.GitHubRepository;
 import com.capitalone.dashboard.repository.GitRequestRepository;
 import com.capitalone.dashboard.settings.ApiSettings;
 import com.capitalone.dashboard.util.Supplier;
@@ -42,7 +42,7 @@ public class GithubSyncServiceTest {
     @Mock private CommitRepository commitRepository;
     @Mock private GitRequestRepository gitRequestRepository;
     @Mock private CollectorItemRepository collectorItemRepository;
-    @Mock private GitHubRepoRepository gitHubRepoRepository;
+    @Mock private GitHubRepository gitHubRepoRepository;
     @Mock private CollectorRepository collectorRepository;
 
     @Before

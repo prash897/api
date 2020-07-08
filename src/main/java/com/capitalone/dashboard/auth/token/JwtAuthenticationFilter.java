@@ -43,7 +43,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                         + ", timeTaken=" + (System.currentTimeMillis() - startTime)
                         + ", endPoint=" + request.getRequestURI()
                         + ", reqMethod=" + request.getMethod()
-                        + ", status=" + (response == null ? 0 : response.getStatus())
+                    //    + ", status=" + (response == null ? 0 : response.getStatus())
                         + ", clientIp=" + request.getRemoteAddr());
             }
             return;
@@ -68,7 +68,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                     + ", timeTaken=" + (System.currentTimeMillis() - startTime)
                     + ", endPoint=" + request.getRequestURI()
                     + ", reqMethod=" + request.getMethod()
-                    + ", status=" + (response == null ? 0 : response.getStatus())
+                //    + ", status=" + (response == null ? 0 : response.getStatus())
                     + ", clientIp=" + request.getRemoteAddr() );
         }
     }

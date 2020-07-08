@@ -80,7 +80,7 @@ public class KeyValueLoggingFilterTest {
         when(request.getRequestURL()).thenReturn(buffer);
         when(request.getRemoteAddr()).thenReturn(remoteAddress);
         when(request.getMethod()).thenReturn(requestMethod);
-        when(response.getStatus()).thenReturn(statusCode);
+      //  when(response.getStatus()).thenReturn(statusCode);
     }
     
     @After
