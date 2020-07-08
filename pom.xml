@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.capitalone.dashboard</groupId>
     <artifactId>api</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <name>${project.groupId}:${project.artifactId}</name>
     <version>3.2.4-SNAPSHOT</version>
     <description>Hygieia Rest API Layer</description>
@@ -124,12 +124,17 @@
             <artifactId>core</artifactId>
             <version>${com.capitalone.dashboard.core.version}</version>
         </dependency>
-   <!--    <dependency>
+         <dependency>
+            <groupId>com.capitalone.dashboard</groupId>
+            <artifactId>jenkins-build-collector</artifactId>
+            <version>3.1.2-SNAPSHOT</version>
+        </dependency>
+  <!--     <dependency>
             <groupId>com.capitalone.dashboard</groupId>
             <artifactId>hygieia-docker-collector</artifactId>
             <version>1.0.0-SNAPSHOT</version>
-        </dependency> 
-       <dependency>
+        </dependency>  -->
+   <!--     <dependency>
             <groupId>com.capitalone.dashboard</groupId>
             <artifactId>hygieia-iac-terraform-collector</artifactId>
             <version>1.0.0-SNAPSHOT</version>
