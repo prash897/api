@@ -117,7 +117,6 @@
     </distributionManagement>
 
     <dependencies>
-
         <!-- Project Deps -->
         <dependency>
             <groupId>com.capitalone.dashboard</groupId>
@@ -129,28 +128,17 @@
             <artifactId>jenkins-build-collector</artifactId>
             <version>3.1.2-SNAPSHOT</version>
         </dependency>
-  <!--     <dependency>
+       <dependency>
             <groupId>com.capitalone.dashboard</groupId>
             <artifactId>hygieia-docker-collector</artifactId>
             <version>1.0.0-SNAPSHOT</version>
-        </dependency>  -->
-   <!--     <dependency>
+        </dependency>
+        <dependency>
             <groupId>com.capitalone.dashboard</groupId>
             <artifactId>hygieia-iac-terraform-collector</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
-       <dependency>
-            <groupId>com.capitalone.dashboard</groupId>
-            <artifactId>jenkins-build-collector</artifactId>
-            <version>3.1.2-SNAPSHOT</version>
-        </dependency> -->
-   
         <!-- Project Deps -->
-       <!--   <dependency>
-            <groupId>com.capitalone.dashboard</groupId>
-            <artifactId>dailyops-collector</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>  -->
   		<dependency>
             <groupId>com.capitalone.dashboard</groupId>
             <artifactId>github-scm-collector</artifactId>

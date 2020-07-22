@@ -28,34 +28,34 @@ dbhost=${SPRING_DATA_MONGODB_HOST:-db}
 dbport=${SPRING_DATA_MONGODB_PORT:-27017}
 
 #Database Username - default is blank
-dbusername=${SPRING_DATA_MONGODB_USERNAME:-dashboarduser}
+#dbusername=${SPRING_DATA_MONGODB_USERNAME:-dashboarduser}
 
 #Database Password - default is blank
-dbpassword=${SPRING_DATA_MONGODB_PASSWORD:-dbpassword}
+#dbpassword=${SPRING_DATA_MONGODB_PASSWORD:-dbpassword}
 
 
 #This is ensure if you are keeping DB outside docker compose.
-dbhostport=${SPRING_DATA_MONGODB_HOST}:${SPRING_DATA_MONGODB_PORT}
+#dbhostport=${SPRING_DATA_MONGODB_HOST}:${SPRING_DATA_MONGODB_PORT}
 
 
 #API encryption key. Optional. See https://hygieia.github.io/Hygieia/setup.html#encryption-for-private-repos	
-key=${KEY:-}
+#key=${KEY:-}
 
-logRequest=${LOG_REQUEST:-false}
-logSplunkRequest=${LOG_SPLUNK_REQUEST:-false}
-
-corsEnabled=${CORS_ENABLED:-false}
+#logRequest=${LOG_REQUEST:-false}
+#logSplunkRequest=${LOG_SPLUNK_REQUEST:-false}
+#
+#corsEnabled=${CORS_ENABLED:-false}
 
 # corsWhitelist=${CORS_WHITELIST:-http://domain1.com:port,http://domain2.com:port}
 
-feature.dynamicPipeline=${FEATURE_DYNAMIC_PIPELINE:-disabled}
+#feature.dynamicPipeline=${FEATURE_DYNAMIC_PIPELINE:-disabled}
 
 #Authentication Settings
 # JWT expiration time in milliseconds
-auth.expirationTime=${AUTH_EXPIRATION_TIME:-60000000}
+#auth.expirationTime=${AUTH_EXPIRATION_TIME:-60000000}
 # Secret Key used to validate the JWT tokens
 # auth.secret=${AUTH_SECRET:-hygieiasecret}
-auth.authenticationProviders=${AUTH_AUTHENTICATION_PROVIDERS:-STANDARD}
+#auth.authenticationProviders=${AUTH_AUTHENTICATION_PROVIDERS:-STANDARD}
 
 # LDAP Server Url, including port of your LDAP server
 # auth.ldapServerUrl=${AUTH_LDAP_SERVER_URL:-}
